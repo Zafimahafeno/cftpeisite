@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CFTPEI</title>
+
+  <!-- Favicon -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* Glassmorphism Effect */
+    .glass-effect {
+        background: rgba(255, 255, 255, 0.1);  /* Transparent white background */
+        backdrop-filter: blur(10px);  /* Blur effect */
+        border: 1px solid rgba(255, 255, 255, 0.2);  /* Light border */
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Animation de texte pour les titres */
+    h1, h2, h3, h4 {
+        animation: slideInLeft 1s ease-out;
+    }
+
+    h1 {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    /* Animation de fondu pour les éléments de la page */
+    .page-header-dts {
+        animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .container {
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Animation des éléments lors du survol */
+    .btn-primary {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #007bff;
+        transform: translateY(-5px);
+    }
+
+    /* Animation de la carte d'information */
+    .p-4.border.rounded {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .p-4.border.rounded:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Animation des éléments du footer */
+    footer .container {
+        animation: fadeInUp 2s ease-out;
+    }
+
+    /* Effet de glissement de gauche à droite */
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Effet de fondu */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Effet de fondu vers le haut */
+    @keyframes fadeInUp {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <img src="img/logo.png" alt="Logo eLearning" style="max-height: 50px;">
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Accueil</a>
+            <a href="about.html" class="nav-item nav-link">A propos</a>
+            <a href="courses.html" class="nav-item nav-link">Nos cours</a>
+            <a href="admission.html" class="nav-item nav-link active">Coût et admission</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Commencez votre apprentissage<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Header Start -->
+  <div class="container-fluid bg-primary py-5 mb-5 page-header-dts">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="text-white animated slideInDown">Coût et admission</h1>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Coûts de Formation et d'Inscription</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="p-4 border rounded glass-effect">
+                <h4>Frais de Formation</h4>
+                <ul>
+                    <li>DTS (Diplôme de Technicien Supérieur) : <strong>1 200 000 MGA / an</strong></li>
+                    <li>Licence Professionnelle : <strong>1 800 000 MGA / an</strong></li>
+                    <li>Master Professionnel : <strong>2 500 000 MGA / an</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="p-4 border rounded glass-effect">
+                <h4>Frais d'Inscription</h4>
+                <ul>
+                    <li>Inscription initiale : <strong>150 000 MGA</strong></li>
+                    <li>Réinscription : <strong>100 000 MGA</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <h2 class="text-center mb-4">Procédure d'Admission</h2>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <div class="p-4 border rounded glass-effect">
+                <h4 class="mb-3">1. Candidature</h4>
+                <p>Soumettez votre dossier de candidature avec les pièces nécessaires (C.V., lettre de motivation, copies des diplômes).</p>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="p-4 border rounded glass-effect">
+                <h4 class="mb-3">2. Concours d'entrée</h4>
+                <p>Participez au concours d'entrée pour évaluer vos connaissances et compétences.</p>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="p-4 border rounded glass-effect">
+                <h4 class="mb-3">3. Inscription</h4>
+                <p>Une fois admis, complétez votre inscription en ligne avec le paiement des frais d'inscription.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer Start -->
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 CFTPEI. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Template JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
